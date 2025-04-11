@@ -1,0 +1,4 @@
+pyodbc
+IPython
+requests
+pandas

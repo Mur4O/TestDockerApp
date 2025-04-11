@@ -1,0 +1,12 @@
+# Следует учитывать, что docker-composes работает с сервисами.
+# 1 сервис = 1 контейнер.
+# Сервисом может быть клиент, сервер, сервер баз данных...
+# Раздел, в котором будут описаны сервисы, начинается с 'services'.
+name: MainContainer
+services:
+  script:
+    build: ./
+    volumes:
+      - type: bind
+        source: /Users/yarik/Desktop/data
+        target: /data
